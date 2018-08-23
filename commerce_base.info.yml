@@ -1,0 +1,64 @@
+name: Commerce Base
+type: profile
+core: 8.x
+description: 'Install with Drupal Commerce pre-configured.'
+distribution:
+  name: 'Drupal'
+dependencies:
+  # Standard
+  - node
+  - history
+  - block
+  - ckeditor
+  - color
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - automated_cron
+
+  # Commerce
+  - address
+  - entity
+  - profile
+  - inline_entity_form
+  - state_machine
+  - commerce
+  - commerce_log
+  - commerce_checkout
+  - commerce_cart
+  - commerce_order
+  - commerce_product
+  - commerce_price
+  - commerce_store
+  - commerce_payment
+  - commerce_promotion
+  
+  # Contrib
+  - admin_toolbar
+  - admin_toolbar_tools
+  - swiftmailer
+  - token
+  - pathauto
+  - graphql
+  - coffee
+  - devel
+  - kint
+
+themes:
+  - adminimal_theme
+  - seven
