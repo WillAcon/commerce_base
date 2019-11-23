@@ -49,8 +49,8 @@ dependencies:
   - commerce_promotion
   
   # Contrib
-  - admin_toolbar
-  - admin_toolbar_tools
+  #- admin_toolbar
+  #- admin_toolbar_tools
   - swiftmailer
   - token
   - pathauto
