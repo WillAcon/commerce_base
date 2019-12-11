@@ -50,14 +50,17 @@ dependencies:
   - commerce_promotion
   
   # Contrib
-  #- admin_toolbar
-  #- admin_toolbar_tools
+  - admin_toolbar
+  - admin_toolbar_tools
+  - module_filter
   - swiftmailer
   - token
+  - imce
   - pathauto
   - coffee
   - devel
   - kint
+  - ctools
 
 themes:
   - adminimal_theme
