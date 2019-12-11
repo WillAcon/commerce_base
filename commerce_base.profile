@@ -24,5 +24,10 @@ function commerce_base_form_install_configure_form_alter(&$form, FormStateInterf
  */
 function commerce_base_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
-  ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
+  // ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
+  $contact_form = ContactForm::load('feedback');
+  if ($contact_form instanceof ContactForm) {
+    $contact_form->setRecipients([$site_mail])->trustData()->save();
+  }
 }
+
