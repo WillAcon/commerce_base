@@ -54,7 +54,6 @@ dependencies:
   - swiftmailer
   - token
   - pathauto
-  - graphql
   - coffee
   - devel
   - kint
